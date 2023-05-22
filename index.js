@@ -78,9 +78,9 @@ const compradores = connectar.define('usuarios_compradores',{
   token: {type: Sequelize.STRING}
 });
 
-tabela.sync({force:true}).then('tabela criada com sucesso').catch((error)=>{console.log('error ao criar a tabela'+error)});
+//tabela.sync({force:true}).then('tabela criada com sucesso').catch((error)=>{console.log('error ao criar a tabela'+error)});
 
-compradores.sync({force:true}).then('tabela criada com sucesso').catch((error)=>{console.log('error ao criar a tabela'+error)});
+//compradores.sync({force:true}).then('tabela criada com sucesso').catch((error)=>{console.log('error ao criar a tabela'+error)});
 
 app.get('/',(req,res)=>{
 
@@ -283,6 +283,26 @@ app.get('/download-video',(req,res)=>{
 
 res.download(__dirname+`/public/software/software.zip`);
 
+
+});
+
+
+app.get('/gerencia',(req,res)=>{
+
+
+compradores.findAll({raw:true}).then(pessoas=>{
+
+res.render('registros',{identificar:pessoas});
+
+});
+
+});
+
+app.get('/manutencao',(req,res)=>{
+
+tabela.destroy({ truncate : true, cascade: false });
+
+res.redirect('/gerencia');
 
 });
 
