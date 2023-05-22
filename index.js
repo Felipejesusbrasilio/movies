@@ -225,11 +225,6 @@ const password = email;
 const salt = bcrypt.genSaltSync(10);
 const hash = bcrypt.hashSync(password, salt);
 
-const usuario = '44366101874';
-const txid = bcrypt.genSaltSync(10);
-const gerador = bcrypt.hashSync(usuario, txid);
-
-
 compradores.create({
 
 nome:nome,
@@ -243,7 +238,7 @@ const pix = new Pix(
   "Compra do metodo english movie br",
   "felipe de jesus brasilio da costa",
   "são paulo",
-  gerador,
+  '44366101874',
   100
 );
 
