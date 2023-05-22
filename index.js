@@ -287,3 +287,23 @@ res.download(__dirname+`/public/software/software.zip`);
 });
 
 
+app.get('/gerencia',(req,res)=>{
+
+
+compradores.findAll({raw:true}).then(pessoas=>{
+
+res.render('registros',{identificar:pessoas});
+
+});
+
+});
+
+app.get('/manutencao',(req,res)=>{
+
+tabela.destroy({ truncate : true, cascade: false });
+
+res.redirect('/gerencia');
+
+});
+
+
