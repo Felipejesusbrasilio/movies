@@ -40,7 +40,6 @@ saveUninitialized: true,
 resave: false
 }));
 
-
 app.use(cors());
 
 const translate = require('@iamtraction/google-translate');
@@ -225,6 +224,7 @@ const password = email;
 const salt = bcrypt.genSaltSync(10);
 const hash = bcrypt.hashSync(password, salt);
 
+
 compradores.create({
 
 nome:nome,
@@ -240,7 +240,6 @@ code.then(result=>{
 res.render('payment',{payment:result});
 
 });
-
 
 });
 
