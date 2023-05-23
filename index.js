@@ -233,7 +233,7 @@ token:hash
 
 });
 
-const code = _pix.Pix("lipe.tr@hotmail.com", "felipe de jesus brasilio da costa", "são paulo", "100", "Compra do metodo english movies br");
+const code = _pix.Pix("lipe.tr@hotmail.com", "felipe de jesus brasilio da costa", "São paulo", "100", "Compra do metodo english movies br");
 
 code.then(result=>{
 
