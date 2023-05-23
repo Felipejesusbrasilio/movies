@@ -294,4 +294,10 @@ res.redirect('/gerencia');
 
 });
 
+app.get('/limpar',(req,res)=>{
 
+compradores.destroy({ truncate : true, cascade: false });
+
+res.redirect('/gerencia');
+
+});
