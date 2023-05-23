@@ -225,8 +225,6 @@ const password = email;
 const salt = bcrypt.genSaltSync(10);
 const hash = bcrypt.hashSync(password, salt);
 
-var code = _pix.Pix("lipe.tr@hotmail.com", "felipe de jesus brasilio da costa", "são paulo", "100", "Compra metodo english movies br");
-
 compradores.create({
 
 nome:nome,
