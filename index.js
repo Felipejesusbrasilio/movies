@@ -27,7 +27,7 @@ const fs = require('fs');
 
 const bcrypt = require('bcryptjs');
 
-const Pix = require("./Pix");
+const _pix = require('faz-um-pix');
 
 app.set('trust proxy', 1);
 app.use(session({
@@ -233,20 +233,13 @@ token:hash
 
 });
 
-const pix = new Pix(
-  "lipe.tr@hotmail.com",
-  "Compra do metodo english movie br",
-  "felipe de jesus brasilio da costa",
-  "são paulo",
-  '44366101874',
-  100
-);
+const code = _pix.Pix("lipe.tr@hotmail.com", "felipe de jesus brasilio da costa", "são paulo", "100", "Compra do metodo english movies br");
 
-const payload = pix.getPayload();
+code.then(result=>{
 
-console.log(payload);
+res.render('payment',{payments:result});
 
-res.render('payment',{payments:payload});
+});
 
 });
 
