@@ -23,11 +23,7 @@
 
 <div class="payment">
 
-<textarea id="texto">
-
-<%= payments %>    
-
-</textarea>    
+<input type='text' id='texto'><%= payments %></input>        
 
 </div>
 
@@ -56,11 +52,12 @@ let button = document.getElementById('copia');
 
 button.addEventListener('click',function(){
 
-let textarea = document.getElementById('texto');
+let textoCopiado = document.getElementById('texto');
 
-textarea.select();
-
-document.execCommand('copy');
+textoCopiado.select();
+textoCopiado.setSelectionRange(0, 99999)
+document.execCommand("copy");
+alert("Pix selecionado com sucesso: " + textoCopiado.value);
 
 });
 
