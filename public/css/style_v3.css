@@ -746,6 +746,63 @@ footer .Quadros-footer img
   transition: 0.5s;
 }
 
+
+.alerts 
+{
+  /*border: 1px solid red;*/
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  display: none;
+}
+
+.alerts .title-alerts
+{
+  /*border: 1px solid red;*/
+  width: 100%;
+  height: 50px;
+  background-color: black;
+}
+
+.alerts .title-alerts svg
+{
+  color: white;
+  float: right;
+  margin-right: 15px;
+  margin-top: 15px;
+  width: 25px;
+  height: 25px;
+}
+
+.alerts .title-alerts svg:hover
+{
+  color: red;
+  transition: 0.5s;
+}
+
+.alerts .title-alerts svg:not(:hover)
+{
+  color: white;
+  transition: 0.5s;
+}
+
+.alerts .Quadro-central-alerts
+{
+  /*border: 1px solid white;*/
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.alerts .Quadro-alerts
+{
+  /*border: 1px solid blue;*/
+  width: 80%;
+  height: 500px;
+  background-color: black;
+}
+
+
 @media only screen and (max-width: 1024px) {
 
 .show-video
