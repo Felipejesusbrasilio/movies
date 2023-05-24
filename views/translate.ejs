@@ -526,6 +526,31 @@ VAMOS LÁ AGORA QUE VOCÊ TEM OS ANKI CARDS AGORA QUE VOCÊ TEM O FILME EM FULL 
 
 </div>
 
+<!-- aqui é a modal -->
+
+
+<div class="alerts fixed-top">
+<div class="title-alerts">
+
+<svg id='close-alerts' xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+  <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+</svg>
+  
+</div>
+
+<div class="Quadro-central-alerts">
+
+<div class="Quadro-alerts">
+
+
+
+  
+</div>
+
+</div>
+
+</div>
+
 
 <script src="https://kit.fontawesome.com/3819a0468e.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
@@ -597,7 +622,7 @@ function clearScroll(){
 
 <script type="text/javascript">
   
-var intervalonew;
+var intervaloNew;
 
 function scrollDireitaNew(){
   intervaloNew = setInterval(function(){ document.getElementById('scrollerNew').scrollLeft += 1 }  , 5);
@@ -777,6 +802,39 @@ window.location.href = 'magnet:?xt=urn:btih:0518a212d7affe56ac5c8cb37aa2e8ee94d9
 });
 
 
+
+</script>
+
+<script type="text/javascript">
+  
+
+let md_alerts = document.querySelector('.alerts');
+
+let close_alerts = document.getElementById('close-alerts');
+
+close_alerts.addEventListener('click',()=>{
+
+md_alerts.style.display = 'none';
+
+});
+
+</script>
+
+<script type="text/javascript">
+  
+
+$(document).ready(function () {
+        //window.onload = window.alert("entrou aqui");
+
+window.onload = function () {
+            
+let md_alerts = document.querySelector('.alerts');
+
+md_alerts.style.display = 'block';
+
+}
+
+});
 
 </script>
 
