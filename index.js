@@ -138,7 +138,7 @@ res.redirect('/traducao');
 
 app.get('/download/:id',(req,res)=>{
 
-res.download(__dirname+`/public/legendas/lipe.jpg`);
+res.download(__dirname+`/public/legendas/legendas.zip`);
 
 });
 
