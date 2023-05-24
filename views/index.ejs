@@ -154,11 +154,11 @@
 
 <div class="slider">
       <h3>CLICK NA IMAGEM PARA REALIZAR O DOWNLOAD</h3>
-      <span onmouseover="scrollEsquerda()" onmouseout="clearScroll()" class="handle handlePrev active">
+      <span onmouseover="scrollEsquerdaNew()" onmouseout="clearScrollNew()" class="handle handlePrev active">
         <i class="fa fa-caret-left" aria-hidden="true"></i>
       </span>
 
-      <div id="scroller" class="row">
+      <div id="scrollerNew" class="row">
         <div class="row__inner">
 
           <div class="gui-card">
@@ -241,7 +241,7 @@
         </div>
 
       </div>
-      <span onmouseover="scrollDireita()" onmouseout="clearScroll()"  class="handle handleNext active">
+      <span onmouseover="scrollDireitaNew()" onmouseout="clearScrollNew()"  class="handle handleNext active">
         <i class="fa fa-caret-right" aria-hidden="true"></i>
       </span>
     </div>
@@ -506,6 +506,22 @@ function scrollEsquerda(){
 };
 function clearScroll(){
   clearInterval(intervalo);
+};
+
+</script>
+
+<script type="text/javascript">
+  
+var intervalonew;
+
+function scrollDireitaNew(){
+  intervaloNew = setInterval(function(){ document.getElementById('scrollerNew').scrollLeft += 1 }  , 5);
+};
+function scrollEsquerdaNew(){
+  intervaloNew = setInterval(function(){ document.getElementById('scrollerNew').scrollLeft -= 1 }  , 5);
+};
+function clearScrollNew(){
+  clearInterval(intervaloNew);
 };
 
 </script>
