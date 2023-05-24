@@ -1,8 +1,8 @@
 *
 {
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";
@@ -64,13 +64,13 @@
 
 body 
 {
-	background-color: black;
+  background-color: black;
 }
 
 header
 {
-	/*border: 1px solid white;*/
-	height: 200px;
+  /*border: 1px solid white;*/
+  height: 200px;
 }
 
 
@@ -83,53 +83,53 @@ header img
 
 header .menu 
 {
-	/*border: 1px solid red;*/
-	position: absolute;
-	width: 100%;
-	height: 100px;
-	margin-top: -20px;
-	background-color: black;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding-right: 10px;
-	padding-left: 10px;
+  /*border: 1px solid red;*/
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  margin-top: -20px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 header .menu .Quadros-menu
 {
-	/*border: 1px solid white;*/
-	width: 50%;
-	height: 80px;
+  /*border: 1px solid white;*/
+  width: 50%;
+  height: 80px;
 }
 
 header .menu .Quadros-menu .Quadro-button
 {
-	/*border: 1px solid red;*/
-	display: grid;
-	place-items: center;
-	height: 100%;
-	background-color: var(--bs-success);
+  /*border: 1px solid red;*/
+  display: grid;
+  place-items: center;
+  height: 100%;
+  background-color: var(--bs-success);
 }
 
 header .menu .Quadros-menu .Quadro-button img 
 {
-	position: absolute;
-	width: 30px;
-	height: 30px;
-	display: none;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  display: none;
 }
 
 header .menu .Quadros-menu .Quadro-button:hover
 {
-	background-color: #013220;
-	transition: 0.5s;
+  background-color: #013220;
+  transition: 0.5s;
 }
 
 header .menu .Quadros-menu .Quadro-button:not(:hover)
 {
-	background-color: var(--bs-success);
-	transition: 0.5s;
+  background-color: var(--bs-success);
+  transition: 0.5s;
 }
 
 
@@ -140,46 +140,46 @@ header .menu .Quadros-menu #colors
 
 header .menu .Quadros-menu #colors:hover
 {
-	background-color: var(--bs-secondary-color);
-	transition: 0.5s;
+  background-color: var(--bs-secondary-color);
+  transition: 0.5s;
 }
 
 
 header .menu .Quadros-menu #color:not(:hover)
 {
-	background-color: var(--bs-orange);
-	transition: 0.5s;
+  background-color: var(--bs-orange);
+  transition: 0.5s;
 }
 
 header .menu .Quadros-menu .Quadro-button a 
 {
-	color: white;
-	text-decoration: none;
-	font-family: arial;
+  color: white;
+  text-decoration: none;
+  font-family: arial;
 }
 
 .Quadro-comprar
 {
-	/*border: 1px solid red;*/
-	margin-top: 300px;
-	height: 100px;
-	display: grid;
-	place-items: center;
+  /*border: 1px solid red;*/
+  margin-top: 300px;
+  height: 100px;
+  display: grid;
+  place-items: center;
 }
 
 .Quadro-comprar .Quadro-central
 {
-	/*border: 1px solid black;*/
-	height: 80px;
-	display: grid;
-	place-items: center;
-	font-family: arial;
+  /*border: 1px solid black;*/
+  height: 80px;
+  display: grid;
+  place-items: center;
+  font-family: arial;
 }
 
 .Quadro-comprar .Quadro-central p 
 {
-	font-size: 20px;
-	color: white;
+  font-size: 20px;
+  color: white;
 }
 
 
@@ -193,16 +193,16 @@ header .menu .Quadros-menu .Quadro-button a
 
 .Quadro-nodification .Quadro-central-nodification
 {
-	/*border: 1px solid red;*/
-	height: 100%;
-	display: flex;
+  /*border: 1px solid red;*/
+  height: 100%;
+  display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .Quadro-nodification .Quadro-central-nodification .Quadros-inside
 {
-	/*border: 1px solid red;*/
+  /*border: 1px solid red;*/
     display: grid;
     place-items: center;
     height: 50%;
@@ -348,6 +348,14 @@ header .menu .Quadros-menu .Quadro-button a
   bottom: 0;
   padding: 10px;
 }
+
+.gui-card__title img{
+ 
+width: 30px;
+height: 30px;
+
+}
+
 .row__inner:hover {
   -webkit-transform: translate3d(-62.5px, 0, 0);
           transform: translate3d(-62.5px, 0, 0);
@@ -654,7 +662,7 @@ footer .Quadros-footer img
   float: right;
   margin-top: -50px;
   margin-right: -20px;
-  background-color: var(--bs-primary);
+  background-color: red;
   border-radius: 100%;
   display: grid;
   place-items: center;
@@ -669,7 +677,7 @@ footer .Quadros-footer img
 
 .container-central .modal-central .Quadro-modal .Quadro-title-modal svg:hover
 {
-  color: red;
+  color: black;
   transition: 0.5s;
 }
 
@@ -779,10 +787,9 @@ footer .Quadros-footer img
   border-radius: 100%;
 }
 
-.container-central .modal-central .Quadro-modal .Quadro-title-modal svg
+.Quadro-nodification .Quadro-central-nodification .Quadros-inside p
 {
-  width: 30px;
-  height: 30px;
+  font-size: 12px;
 }
 
 .container-central .modal-central .Quadro-modal .Quadro-forme form 
@@ -800,8 +807,8 @@ footer .Quadros-footer img
 
 header
 {
-	/*border: 1px solid white;*/
-	height: 100px;
+  /*border: 1px solid white;*/
+  height: 100px;
 }
 
 header img
@@ -812,49 +819,49 @@ header img
 
 header .menu 
 {
-	height: 80px;
+  height: 80px;
 }
 
 header .menu .Quadros-menu
 {
-	height: 50px;
+  height: 50px;
 }
 
 header .menu .Quadros-menu .Quadro-button
 {
-	height: 100%;
+  height: 100%;
 }
 
 header .menu .Quadros-menu .Quadro-button img 
 {
-	width: 20px;
-	height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 .Quadro-comprar
 {
-	margin-top: 200px;
-	height: 50px;
+  margin-top: 200px;
+  height: 50px;
 }
 
 .Quadro-comprar .Quadro-central
 {
-	height: 30px;
+  height: 30px;
 }
 
 .Quadro-comprar .Quadro-central p 
 {
-	font-size: 12px;
+  font-size: 12px;
 }
 
 .Quadro-nodification .Quadro-central-nodification
 {
-	width: 80%;
+  width: 80%;
 }
 
 .Quadro-nodification .Quadro-central-nodification .Quadros-inside
 {
-	width: 100%;
+  width: 100%;
 }
 
 .Quadro-nodification .Quadro-central-nodification .Quadros-inside p
@@ -864,8 +871,8 @@ header .menu .Quadros-menu .Quadro-button img
 
 .Quadro-nodification .Quadro-central-nodification .Quadros-inside img
 {
-	width: 50px;
-	height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 .wallpaper-black
@@ -941,7 +948,7 @@ footer .Quadros-footer svg
   float: right;
   margin-top: -30px;
   margin-right: -20px;
-  background-color: var(--bs-primary);
+  background-color: red;
   border-radius: 100%;
 }
 
